@@ -43,14 +43,66 @@ a{
     
 }
 
-/*-------------- header ---------------*/
-.header{
-    position: relative;
-    background-color: #E6F0FF;
+/*-------------- fix-header ---------------*/
+.fix-header{
+    padding-top: 16px;
+    background-color: #fff;
+    position: sticky;
+    top: -16px;
+    z-index: 1;
 }
+
+.fix-header .content .navbar{
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+}
+
+.fix-header .content .navbar ul{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.fix-header .content .navbar ul li{
+    padding: 14px 14px;
+}
+
+.fix-header .content .navbar ul li a{
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.fix-header .content .navbar .action{
+    margin-left: auto;
+}
+
+.fix-header .content .navbar .action{
+    margin-left: auto;
+}
+
+.fix-header .content .navbar .action .btn-action{
+    padding: 13px 26px;
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.fix-header .content .navbar .action .action-link{
+    color: #0F1B4C;
+    padding: 14px 14px;
+}
+
+.fix-header .content .navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/*-------------- header ---------------*/
 
 .header .content{
     height: 736px;
+    max-height: 100%;
     padding-top: 46px;
 }
 
@@ -59,48 +111,18 @@ a{
     align-items: center
 }
 
-.header .content .navbar ul{
-    display: flex;
-    margin-left: 50px;
-}
-
-.header .content .navbar ul li{
-    padding: 14px 14px;
-}
-
-.header .content .navbar ul li a:hover{
-    text-decoration: underline;
-}
-
-.header .content .navbar ul li a{
-    color: #4F5361 !important;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-}
-
-.header .content .navbar .action{
-    margin-left: auto;
-}
-
-.header .content .navbar .action .btn-action{
-    padding: 13px 26px;
-    color: #FFF;
-    font-size: 1.4rem;
-}
-
-.header .content .navbar .action .action-link{
-    color: #0F1B4C;
-    padding: 14px 14px;
-}
-
 /* ------------- Hero information -------------- */
-.hero .info{
-    width: 51%;
-
+.hero-wrap {
+    position: relative;
+    display: flex;
+    padding-top: 160px;
 }
 
-.hero .info .sub-title{
+.hero-wrap .hero .info{
+    width: 51%;
+}
+
+.hero-wrap .hero .info .sub-title{
     margin-top: 130px;
     color: #687690;
     font-size: 1.8rem;
@@ -108,7 +130,7 @@ a{
     letter-spacing: 0.018rem;
 }
 
-.hero .info .title{
+.hero-wrap .hero .info .title{
     margin-top: 8px;
     color: #000336;
     font-size: 6.2rem;
@@ -116,7 +138,7 @@ a{
     line-height: 118.75%; /* 118.75% */
 }
 
-.hero .info .desc{
+.hero-wrap .hero .info .desc{
     margin-top: 30px;
     color: #5A6473;
     font-size: 1.8rem;
@@ -124,14 +146,15 @@ a{
     line-height: 177.778%; /* 177.778% */
 }
 
-.hero .info .btn{
+.hero-wrap .hero .info .btn{
     margin-top: 40px;
     color: #FFF;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-.hero .hero-img{
+.hero-wrap .content .hero .hero-img{
+    box-sizing: cover;
     position: absolute;
     right: calc((100% - 1110px) / 2 - 100px);
     bottom: 0px;
@@ -165,8 +188,18 @@ a{
 
 .client .content .rows .row-3{
     display: flex;
-    margin-top: 96px;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.client .content .rows .row-3 a img{
+    padding: 25px 15px;
+    border-radius: 12px;
+}
+
+.client .content .rows .row-3 a img:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ----------- Guides --------------- */

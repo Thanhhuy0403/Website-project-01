@@ -1,0 +1,154 @@
+/* CP */
+@media screen and (min-width: 992px) {
+    .fix-header .menu-icon {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991.98px) {
+    .fix-header .content .navbar ul {
+        display: none;
+    }
+
+    .fix-header .content {
+        position: relative;
+    }
+
+    .fix-header .content .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fix-header .menu-icon {
+        font-size: 25px;
+    }
+
+    .mobile-header .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .mobile-header .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: #fff;
+        z-index: 2;
+        transform: translate(-100%);
+    }
+
+    .menu-drawer .logo {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .menu-drawer li {
+        padding: 15px;
+        padding-left: 40px;
+        list-style-type: none;
+    }
+
+    .menu-drawer li a {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #4f5361;
+    }
+
+    .menu-drawer li a:hover {
+        text-decoration: underline;
+        color: #06113a;
+    }
+
+    .hero-wrap .picture {
+        display: none;
+    }
+
+    .hero-wrap .hero {
+        justify-content: center;
+    }
+
+    .hero-wrap .hero .info {
+        width: 80%;
+        text-align: center;
+    }
+
+    .client .content .rows .row-3 {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .client .content .rows .row-3 {
+        flex-wrap: wrap;
+    }
+
+    .featured .list-feature {
+        flex-wrap: wrap;
+    }
+
+    .stats .content .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stats .content .row .img-block,
+    .stats .content .row .title {
+        width: 95%;
+    }
+
+    .stats .content .row .img-block {
+        order: 2;
+        margin-top: 40px;
+    }
+
+    .stats .content .row .title {
+        order: 1;
+        padding-left: 30px;
+    }
+
+    .stats .content .data {
+        display: none;
+    }
+
+    .subscribe .content .body .img-pict {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .fix-header .action .action-link {
+        display: none;
+    }
+
+    .footer .list-item {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .end .content .desc {
+        font-size: 1.1rem;
+    }
+}
